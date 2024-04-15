@@ -7,16 +7,16 @@
 
 
 %% See http://tex.stackexchange.com/questions/78334/print-system-information-in-latex-doc
-\RequirePackage{ifxetex}
+\usepackage{ifxetex}
 \ifxetex
-\RequirePackage{fontspec}
-\RequirePackage{xltxtra}
+\usepackage{fontspec}
+\usepackage{xltxtra}
 \newcommand{\myxetex}{\XeLaTeX}
 \newcommand{\compilator}{\XeLaTeX{}}
 \newcommand{\cversion}{\the\XeTeXversion\XeTeXrevision}
 
 \else
-\RequirePackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
 \newcommand{\myxetex}{\texttt{XeLaTeX}}
 \newcommand{\compilator}{\LaTeX{}}
 \makeatletter
@@ -42,19 +42,19 @@
 \newcommand{\tcbversion}{\tcb@version}
 \makeatother
 
-\RequirePackage{etoolbox}
+\usepackage{etoolbox}
 
-\RequirePackage{minted}
+\usepackage{minted}
 
 
-\RequirePackage{tikz}
+\usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{fit,spy}
 \usetikzlibrary{intersections}
 
 \usepackage{pgfplots}
 
-\RequirePackage{tcolorbox}
+\usepackage{tcolorbox}
 \tcbuselibrary{skins,listings}
 \tcbuselibrary{minted}
 \tcbuselibrary{documentation}
